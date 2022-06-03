@@ -17,7 +17,7 @@ exports.register = async (req, res) => {
             email: joi.string().email().min(5).required(),
             password: joi.string().min(6).required(),
             fullName: joi.string().min(3),
-            phone: joi.number().min(11),
+            phone: joi.string().min(8),
             address: joi.string().min(10),
             // gender: joi.string().min(3).required(),
         })
